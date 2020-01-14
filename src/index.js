@@ -1,14 +1,8 @@
 const { GraphQLServer } = require("graphql-yoga");
 const fs = require("fs");
+const path = require("path");
 
-fs.readFileSync;
-let links = [
-  {
-    id: "link-0",
-    url: "www.howtographql.com",
-    description: "Fullstack tutorial for GraphQL"
-  }
-];
+let links = JSON.parse(fs.readFileSync(path.resolve(__dirname, "links.json")));
 
 let idCount = links.length;
 
@@ -18,8 +12,7 @@ function randomFromArray(arr) {
 
 const resolvers = {
   Query: {
-    randomLink: () => randomFromArray(links),
-    feed: () => links
+    randomLink: () => randomFromArray(links)
   },
   Mutation: {
     // 2
@@ -55,7 +48,6 @@ const resolvers = {
   }
 };
 
-// 3
 const server = new GraphQLServer({
   typeDefs: "./src/schema.graphql",
   resolvers

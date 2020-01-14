@@ -1,6 +1,7 @@
 const { GraphQLServer } = require("graphql-yoga");
+const fs = require("fs");
 
-// implementation of schema
+fs.readFileSync;
 let links = [
   {
     id: "link-0",
@@ -11,10 +12,13 @@ let links = [
 
 let idCount = links.length;
 
+function randomFromArray(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
 const resolvers = {
   Query: {
-    info: () => `This is the API of a Hackernews Clone`,
-    // 2
+    randomLink: () => randomFromArray(links),
     feed: () => links
   },
   Mutation: {
@@ -46,12 +50,6 @@ const resolvers = {
         }
         return true;
       });
-      //     const link = links.find(link => link === id);
-      //   links.splice(
-      //     links.findIndex(link => link === id),
-      //     1
-      //   );
-
       return deletedLink;
     }
   }

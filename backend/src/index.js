@@ -1,4 +1,4 @@
-const { GraphQLServer } = require("graphql-yoga");
+const { GraphQLServer } = require("./node_modules/graphql-yoga");
 const fs = require("fs");
 const path = require("path");
 

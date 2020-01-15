@@ -2,7 +2,9 @@ const { GraphQLServer } = require("./node_modules/graphql-yoga");
 const fs = require("fs");
 const path = require("path");
 
-let links = JSON.parse(fs.readFileSync(path.resolve(__dirname, "links.json")));
+let links = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, "src", "links.json"))
+);
 
 let idCount = links.length;
 

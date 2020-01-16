@@ -1,6 +1,7 @@
 const { GraphQLServer } = require("./node_modules/graphql-yoga");
 const fs = require("fs");
 const path = require("path");
+const express = require("express");
 
 let links = JSON.parse(
   fs.readFileSync(path.resolve(__dirname, "src", "links.json"))
@@ -57,6 +58,12 @@ const server = new GraphQLServer({
 const OPTIONS = {
   port: process.env.PORT || 5000
 };
+
+server.express.use(express.static(path.join(__dirname, "client/build")));
+server.express.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + "/client/build/index.html"));
+});
+
 server.start(OPTIONS, () =>
   console.log(`Server is running on http://localhost:5000`)
 );

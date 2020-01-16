@@ -65,5 +65,5 @@ server.express.get("*", (req, res) => {
 });
 
 server.start(OPTIONS, () =>
-  console.log(`Server is running on http://localhost:5000`)
+  console.log(`Server is running on ${process.env.PORT || 5000}`)
 );

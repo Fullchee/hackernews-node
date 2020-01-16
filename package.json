@@ -2,10 +2,16 @@
   "name": "hackernews-node",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/Fullchee/hackernews-node.git",
+  "repository": "https://github.com/Fullchee/values.git",
   "author": "Fullchee Zhang <fullchee@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "graphql-yoga": "^1.18.3"
+  },
+  "scripts": {
+    "gql-start": "node index.js",
+    "client-start": "yarn --cwd client start",
+    "start": "yarn gql-start & yarn client-start",
+    "heroku-postbuild": "cd client && yarn install && yarn run build"
   }
 }

@@ -1,16 +1,408 @@
 [
   {
-    "id": "link-0",
-    "url": "https://www.youtube.com/watch?v=Vs7MsSPSrdI",
+    "keywords": "nihilism",
     "title": "Ask A Monk: Is There a Purpose In Life?",
-    "takeaways": "I don't remember",
-    "categories": ["nihilism"]
+    "url": "https://www.youtube.com/watch?v=Vs7MsSPSrdI",
+    "takeaways": "",
+    "datesAccessed": ["2019-12"]
   },
   {
-    "id": "link-1",
-    "url": "https://youtu.be/AbSehcT19u0",
+    "keywords": "motivation\nperspective",
+    "title": "When asked why he continued to practice the cello three hours a day at the age of 93 he answered... \"I'm beginning to notice some improvement.\" -Pablo Casals",
+    "url": "",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "focus",
     "title": "Malcolm in the Middle: Staying on task",
-    "takeaways": "Finishing things is so so important",
-    "categories": ["focus"]
+    "url": "https://youtu.be/AbSehcT19u0",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "failure\naddiction",
+    "title": "People with addiction are the most evolutionary sensitive\nDrugs hijack those systems\nLike childhood trauma\nhabits served a purpose",
+    "url": "https://www.wnycstudios.org/podcasts/radiolab/articles/addiction",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "risk taking",
+    "title": "Veritasium: Risk taking",
+    "url": "https://www.youtube.com/watch?v=vBX-KulgJ1o",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Malcolm Gladwell’s 12 rules for life\nPulling the goalie earlier (rational)\nhard to be disagreeable",
+    "url": "http://revisionisthistory.com/episodes/27-malcolm-gladwell-s-12-rules-for-life",
+    "takeaways": "Pulling the goalie earlier (rational)\n\nUnderstand that it's hard to be disagreeable",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Revisionist History: Big man can't shoot",
+    "url": "http://revisionisthistory.com/episodes/03-the-big-man-cant-shoot",
+    "takeaways": "Thresholds: Why good ideas don't take hold and spread",
+    "datesAccessed": ["2018-01-14"]
+  },
+  {
+    "keywords": "Perspective",
+    "title": "Carlos doesn't remember",
+    "url": "http://revisionisthistory.com/episodes/04-carlos-doesnt-remember",
+    "takeaways": "",
+    "datesAccessed": ["2017-12-28"]
+  },
+  {
+    "keywords": "",
+    "title": "Generous Orthodoxy",
+    "url": "http://revisionisthistory.com/episodes/09-generous-orthodoxy",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "How to be a man with Bill Withers",
+    "url": "https://www.wnycstudios.org/podcasts/deathsexmoney/episodes/how-to-be-a-man-with-bill-withers",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Jeremy Lin",
+    "url": "http://freakonomics.com/podcast/jeremy-lin/",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Shane Battier",
+    "url": "https://www.ted.com/talks/worklife_with_adam_grant_the_problem_with_all_stars/transcript?language=en",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Ira Glass on the Creative Process",
+    "url": "https://www.youtube.com/watch?v=PbC4gqZGPSY",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Hidden Brain: Fresh Starts",
+    "url": "",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Hidden Brain Smoke and Mirrors",
+    "url": "",
+    "takeaways": "",
+    "datesAccessed": ["Nov 5, 2019"]
+  },
+  {
+    "keywords": "",
+    "title": "Veritasium survivor bias",
+    "url": "https://www.youtube.com/watch?v=_Qd3erAPI9w",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Veritasium: Learned Helplessness",
+    "url": "https://www.youtube.com/watch?v=YMPzDiraNnA",
+    "takeaways": "",
+    "datesAccessed": ["Anything that’s worth doing is worth doing poorly"]
+  },
+  {
+    "keywords": "perspective",
+    "title": "Planet Money: #217: The Art of Living on the Poverty Line",
+    "url": "",
+    "takeaways": "",
+    "datesAccessed": ["2018-02"]
+  },
+  {
+    "keywords": "",
+    "title": "Vlogbrothers - Ai Wei Wei and Poetry Makes Nothing Happen",
+    "url": "Vlogbrothers - Ai Wei Wei and Poetry Makes Nothing Happen",
+    "takeaways": "Hammering steel straight from collapsed schools\n\nVoice recording listing students who died\n 3 hours 41 mins",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Vlogbrothers Story of 2 Syrian Refugees -",
+    "url": "https://www.youtube.com/watch?v=8WSagdz-0Ac&index=4&list=PL9EF0C1C9A93295C5",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "call-to-action",
+    "title": "Against the Rules: The Seven Minute Rule",
+    "url": "",
+    "takeaways": "",
+    "datesAccessed": ["2019-11-01"]
+  },
+  {
+    "keywords": "",
+    "title": "Invisibilia: Frame of Reference: Part 2: Hasan Minhaj",
+    "url": "",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Importance of boredom",
+    "url": "https://www.youtube.com/watch?v=LKPwKFigF8U",
+    "takeaways": "Looking at your phone when bored is like shocking yourself",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "perspective",
+    "title": "This is Water - David Foster Wallace",
+    "url": "https://www.youtube.com/watch?v=8CrOL-ydFMI",
+    "takeaways": "Really reminded me of meditative practices. Great advice, takes practice to follow",
+    "datesAccessed": ["2019-08"]
+  },
+  {
+    "keywords": "",
+    "title": "Hidden Brain: in the heat of the moment",
+    "url": "",
+    "takeaways": "Hot and cold states",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Codebreaker: Season 2: The Augmented Self: Minute 22",
+    "url": "",
+    "takeaways": "Choreographed systems are choreographed so they can be efficient, not so they can be kind\n\n We only care about what we measure because we don’t know how to care about anything else\n\nDo you think that this technology saved you?\n\nI’m probably alive because of it. I think it’s probably saved me physically but it think it spiritually it bankrupted me\n\nHowever, maybe it’s possible to set your systems with the aim to maximize your well being, rather than productivity",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Hidden Brain: Designing your life",
+    "url": "",
+    "takeaways": "",
+    "datesAccessed": ["2018-01"]
+  },
+  {
+    "keywords": "",
+    "title": "Hidden Brain: Tunnel Vision",
+    "url": "",
+    "takeaways": "",
+    "datesAccessed": ["2017-12, 2019-08"]
+  },
+  {
+    "keywords": "",
+    "title": "Hidden Brain: Regrets, I Have a Few…",
+    "url": "",
+    "takeaways": "",
+    "datesAccessed": ["2018-02"]
+  },
+  {
+    "keywords": "",
+    "title": "Radiolab: Unravelling Bolero",
+    "url": "",
+    "takeaways": "at the end it reminds me of Cornel West’s “I’ve been put on this earth and I choose to live a life of integrity, honesty, decency”",
+    "datesAccessed": ["2018-03-21"]
+  },
+  {
+    "keywords": "",
+    "title": "Radiolab: How to be a hero",
+    "url": "",
+    "takeaways": "",
+    "datesAccessed": ["2018-03-19"]
+  },
+  {
+    "keywords": "",
+    "title": "TVO Big Ideas: The Kite Runner",
+    "url": "",
+    "takeaways": "There is a way to be good again",
+    "datesAccessed": [2019]
+  },
+  {
+    "keywords": "",
+    "title": "CBC Ideas: Doing the right thing",
+    "url": "",
+    "takeaways": "",
+    "datesAccessed": [2017]
+  },
+  {
+    "keywords": "",
+    "title": "CBC Ideas: Brother West",
+    "url": "",
+    "takeaways": "Try again, fail again, fail better, \nwho are you going to be from mother’s womb to tomb?",
+    "datesAccessed": [2018]
+  },
+  {
+    "keywords": "",
+    "title": "Vlogbrothers: Russian Reversal",
+    "url": "https://www.youtube.com/watch?v=-mrJkEwAmVA",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Cappuccino Reconsidered (Planet Money) -",
+    "url": "",
+    "takeaways": "About how the complex problems of this new world doesn’t have simple solutions",
+    "datesAccessed": ["2018-02, 2019-09"]
+  },
+  {
+    "keywords": "",
+    "title": "Planet Money: When Luddites Attack",
+    "url": "",
+    "takeaways": "How The Luddites were justified in destroying machines\n\nit didn’t get better for everyone for at least 2 generations",
+    "datesAccessed": ["2018-02, 2019-09"]
+  },
+  {
+    "keywords": "",
+    "title": "Veritasium: Regression to the mean",
+    "url": "https://www.youtube.com/watch?v=1tSqSMOyNFE",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Veritasium: The spacious present",
+    "url": "https://www.youtube.com/watch?v=K4vyRvMASPU",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Vlogbrothers: On mental illness",
+    "url": "https://www.youtube.com/watch?v=Z_y4CACK-9g",
+    "takeaways": "I don’t expect you to get well soon. Instead, my hope for you is for you to have a full and rich life",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "What you make of it",
+    "url": "https://www.youtube.com/watch?v=HL4Vz-644GA",
+    "takeaways": "“How you feel at your worst is not how you’ll always feel",
+    "datesAccessed": ["2019-09"]
+  },
+  {
+    "keywords": "",
+    "title": "Vlogbrothers - Your illness is not your fault",
+    "url": "https://www.youtube.com/watch?v=3krVl6UMIeo",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Vlogbrothers: on pain",
+    "url": "https://www.youtube.com/watch?v=Gxz-IBgeDHc",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Vlogbrothers",
+    "url": "https://www.youtube.com/watch?v=Gp-kra5kvQY",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Vlogbrothers",
+    "url": "https://www.youtube.com/watch?v=dqgYnF4aygA",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "On Middle School Misery",
+    "url": "https://www.youtube.com/watch?v=u90dGnKhhlk",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "ON Mattering",
+    "url": "https://www.youtube.com/watch?v=p-5DX4XqtUI",
+    "takeaways": "“Tonight, we feast on centuries of forgotten work",
+    "datesAccessed": ["2019-08-31"]
+  },
+  {
+    "keywords": "",
+    "title": "Invisibilia: The Pattern Problem",
+    "url": "",
+    "takeaways": "- this really reminded me of how random life is",
+    "datesAccessed": ["2018-04-01"]
+  },
+  {
+    "keywords": "",
+    "title": "What is NOT Random",
+    "url": "https://www.youtube.com/watch?v=sMb00lz",
+    "takeaways": "the nature of randomness",
+    "datesAccessed": ["2018-04-02"]
+  },
+  {
+    "keywords": "",
+    "title": "Invisibilia: - A Secret History of Thoughts",
+    "url": "",
+    "takeaways": "- Thoughts are just synapses firing randomly. They don’t have to mean anything",
+    "datesAccessed": ["- 2018-01, 2018-04-01"]
+  },
+  {
+    "keywords": "risk",
+    "title": "How to become Batman",
+    "url": "",
+    "takeaways": "raising expectations can lead blind people to see\n\nIncrease their willingness to take risks",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Vlogbrothers: What this picture doesn't show",
+    "url": "https://www.youtube.com/watch?v=3AVNhTi9pzM",
+    "takeaways": "3 farmers on their way to a dance",
+    "datesAccessed": ["2020-01"]
+  },
+  {
+    "keywords": "",
+    "title": "10% Happier: Fighting depression w/ social connection, Hour 1:30",
+    "url": "https://player.fm/series/10-happier-with-dan-harris/ep-183-fighting-depression-with-social-connection-johann-hari",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Hurry Slowly The Science of Sleep",
+    "url": "https://hurryslowly.co/010-sigrid-veasey/",
+    "takeaways": "Sleep inertia",
+    "datesAccessed": ["2020-01-17"]
+  },
+  {
+    "keywords": "",
+    "title": "Sandy Metz: Lucky You",
+    "url": "https://www.youtube.com/watch?v=c5WWTvHB_sA",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Sandy Metz: You are insufficiently persuasive",
+    "url": "https://www.youtube.com/watch?v=VzWLGMtXflg",
+    "takeaways": "",
+    "datesAccessed": []
+  },
+  {
+    "keywords": "",
+    "title": "Revisionist History: Basement Tapes",
+    "url": "",
+    "takeaways": "What is a son's duty to a father's legacy?",
+    "datesAccessed": ["2020-01-18"]
+  },
+  {
+    "keywords": "",
+    "title": "Revisionist History: Burden of proof",
+    "url": "",
+    "takeaways": "Smoking, NFL: You should act before you have 100% proof",
+    "datesAccessed": ["2020-01-18"]
   }
 ]

@@ -15,7 +15,10 @@ function randomFromArray(arr) {
 
 const resolvers = {
   Query: {
-    randomLink: () => randomFromArray(links)
+    randomLink: () => randomFromArray(links),
+    searchId: (_, { id }) => {
+      return links.find(link => link.id === id);
+    }
   },
   Mutation: {
     // 2
@@ -31,13 +34,10 @@ const resolvers = {
       links.push(link);
       return link;
     },
-    updateLink: (_, { id, url, description }) => {
-      const index = links.findIndex(link => link.id === id);
-      const link = links.find(link => link.id === id);
-      url && (link.url = url);
-      description && (link.description = description);
-      links[index] = link;
-      return link;
+    updateLink: (_, l) => {
+      const index = links.findIndex(link => link.id === l.id);
+      links[index] = l;
+      return l;
     },
     deleteLink: (_, { id }) => {
       let deletedLink;

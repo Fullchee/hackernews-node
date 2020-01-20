@@ -19,12 +19,15 @@ const resolvers = {
   },
   Mutation: {
     // 2
-    post: (parent, args) => {
+    addLink: (parent, args) => {
       const link = {
-        id: `link-${idCount++}`,
-        description: args.description,
-        url: args.url
+        id: `${idCount++}`,
+        title: args.title | "",
+        takeaways: args.takeaways || "",
+        url: args.url || ""
       };
+
+      // TODO: look for duplicates
       links.push(link);
       return link;
     },
@@ -47,6 +50,17 @@ const resolvers = {
         return true;
       });
       return deletedLink;
+    },
+    searchAll: (_, { query }) => {
+      let results = [];
+      for (let i = 0; i < links.length; i++) {
+        for (key in links[i]) {
+          if (links[i][key].indexOf(query) !== -1) {
+            results.push(links[i]);
+          }
+        }
+      }
+      return results;
     }
   }
 };

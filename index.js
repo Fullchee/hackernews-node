@@ -3,28 +3,6 @@ const fs = require("fs");
 const path = require("path");
 const cors = require("cors");
 
-/**
- * @returns {string} - today's date in YYYY-MM-DD
- */
-function today() {
-  var dateObj = new Date();
-  var month = dateObj.getUTCMonth() + 1;
-  var day = dateObj.getUTCDate();
-  var year = dateObj.getUTCFullYear();
-
-  return year + "-" + month + "-" + day;
-}
-var CronJob = require("cron").CronJob;
-new CronJob(
-  "0 0 0 1 * *",
-  function() {
-    fs.writeFile(path.resolve(__dirname, "src", `links-${today()}.json`));
-  },
-  null,
-  true,
-  "America/Los_Angeles"
-);
-
 let links = JSON.parse(
   fs.readFileSync(path.resolve(__dirname, "src", "links.json"))
 );

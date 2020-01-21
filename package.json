@@ -7,7 +7,6 @@
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
-    "cron": "^1.8.1",
     "easygraphql-tester": "^5.1.6",
     "graphql-yoga": "^1.18.3",
     "jest": "^24.9.0"

@@ -14,6 +14,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "jest test",
-    "deploy": "git push heroku master"
+    "deploy": "git push heroku master",
+    "updatelinks": "curl https://fullchee-values-backend.herokuapp.com/links > src/links.json"
   }
 }

@@ -83,7 +83,7 @@ const OPTIONS = {
 };
 
 server.express.get("/links", function(req, res) {
-  res.json(JSON.stringify(links));
+  res.json(JSON.stringify(links, null, 1));
 });
 
 server.start(OPTIONS, () =>

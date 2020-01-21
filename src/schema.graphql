@@ -1,7 +1,6 @@
 type Query {
-  info: String!
   randomLink: Link!
-  searchId(id: String): Link
+  searchId(id: ID!): Link
 }
 
 type Mutation {
@@ -10,7 +9,8 @@ type Mutation {
     title: String
     url: String
     takeaways: String
-    categories: [String]
+    keywords: [String]
+    datesAccessed: [String]
   ): Link
   deleteLink(id: ID!): Link
   addLink(title: String!, url: String, takeaways: String): Link!
@@ -19,8 +19,9 @@ type Mutation {
 
 type Link {
   id: ID!
-  categories: [String]
+  keywords: [String]
   title: String!
   takeaways: String
   url: String
+  datesAccessed: [String]
 }

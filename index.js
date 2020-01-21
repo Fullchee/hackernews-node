@@ -17,7 +17,8 @@ const resolvers = {
   Query: {
     randomLink: () => randomFromArray(links),
     searchId: (_, { id }) => {
-      return links.find(link => link.id === id);
+      const a = links.find(link => link.id === id);
+      return a;
     }
   },
   Mutation: {

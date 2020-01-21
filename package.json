@@ -7,10 +7,14 @@
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
-    "graphql-yoga": "^1.18.3"
+    "easygraphql-tester": "^5.1.6",
+    "graphql-yoga": "^1.18.3",
+    "jest": "^24.9.0"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "jest test",
+    "deploy": "git push heroku master"
   },
   "engines": {
     "node": "13.6.0"

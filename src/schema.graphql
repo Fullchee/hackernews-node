@@ -1,6 +1,7 @@
 type Query {
   randomLink: Link!
   searchId(id: ID!): Link
+  links: [Link!]!
 }
 
 type Mutation {

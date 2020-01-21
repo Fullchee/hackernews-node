@@ -28,7 +28,9 @@ const resolvers = {
         id: `${idCount++}`,
         title: args.title | "",
         takeaways: args.takeaways || "",
-        url: args.url || ""
+        url: args.url || "",
+        categories: args.categories || [],
+        datesAccessed: args.datesAccessed || []
       };
 
       // TODO: look for duplicates

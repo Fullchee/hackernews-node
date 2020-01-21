@@ -82,8 +82,10 @@ const OPTIONS = {
   port: process.env.PORT || 5000
 };
 
+server.express.set("json spaces", 2);
+
 server.express.get("/links", function(req, res) {
-  res.json(JSON.stringify(links, null, 1));
+  res.json(JSON.parse(links));
 });
 
 server.start(OPTIONS, () =>

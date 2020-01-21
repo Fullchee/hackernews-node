@@ -2,15 +2,18 @@ const { GraphQLServer } = require("./node_modules/graphql-yoga");
 const fs = require("fs");
 const path = require("path");
 const cors = require("cors");
+const crypto = require("crypto");
 
 let links = JSON.parse(
   fs.readFileSync(path.resolve(__dirname, "src", "links.json"))
 );
 
-let idCount = links.length;
-
 function randomFromArray(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
+}
+
+function generateId() {
+  return crypto.randomBytes(16).toString("hex");
 }
 
 const resolvers = {
@@ -26,7 +29,7 @@ const resolvers = {
     // 2
     addLink: (parent, args) => {
       const link = {
-        id: `${idCount++}`,
+        id: `${generateId()}`,
         title: args.title | "",
         takeaways: args.takeaways || "",
         url: args.url || "",
@@ -78,6 +81,10 @@ server.express.use(cors());
 const OPTIONS = {
   port: process.env.PORT || 5000
 };
+
+server.express.get("/links", function(req, res) {
+  res.json(JSON.stringify(links));
+});
 
 server.start(OPTIONS, () =>
   console.log(`GraphQL Server is running on ${process.env.PORT || 5000}`)

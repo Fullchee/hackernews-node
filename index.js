@@ -43,7 +43,11 @@ const resolvers = {
     },
     updateLink: (_, l) => {
       const index = links.findIndex(link => link.id === l.id);
-      links[index] = l;
+      if (!index) {
+        links.push(l);
+      } else {
+        links[index] = l;
+      }
       return l;
     },
     deleteLink: (_, { id }) => {

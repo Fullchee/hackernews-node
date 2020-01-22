@@ -4,9 +4,13 @@ const path = require("path");
 const cors = require("cors");
 const crypto = require("crypto");
 
-let links = JSON.parse(
-  fs.readFileSync(path.resolve(__dirname, "src", "links.json"))
-);
+let links;
+resetLinks();
+function resetLinks() {
+  links = JSON.parse(
+    fs.readFileSync(path.resolve(__dirname, "src", "links.json"))
+  );
+}
 
 function randomFromArray(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
@@ -90,6 +94,11 @@ server.express.set("json spaces", 2);
 
 server.express.get("/links", function(req, res) {
   res.json(JSON.parse(links));
+});
+
+server.express.get("/reset", function(req, res) {
+  resetLinks();
+  res.send("Reset completed");
 });
 
 server.start(OPTIONS, () =>

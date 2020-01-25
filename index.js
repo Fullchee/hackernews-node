@@ -4,6 +4,7 @@ const path = require("path");
 const cors = require("cors");
 const crypto = require("crypto");
 const { check, validationResult } = require("express-validator");
+const express = require("express");
 
 let links;
 resetLinks();
@@ -87,7 +88,7 @@ const server = new GraphQLServer({
 });
 
 server.express.use(cors());
-server.express.use(server.express.urlencoded());
+server.express.use(express.urlencoded({ extended: false }));
 const OPTIONS = {
   port: process.env.PORT || 5000
 };
@@ -99,8 +100,7 @@ server.express.get("/links", function(req, res) {
 });
 
 server.express.get("/reset", function(req, res) {
-  resetLinks();
-  res.send("Reset completed");
+  res.sendFile(path.resolve(__dirname, "src", "resetForm.html"));
 });
 
 server.express.post(
@@ -109,9 +109,16 @@ server.express.post(
   (req, res) => {
     const password = req.body.resetPassword;
 
-    // shoutout to Chrome!
-    if (password === "thisisunsafe") {
-      
+    if (
+      password ===
+      fs
+        .readFileSync(path.resolve(__dirname, "src", "supersecretpass"), "utf8")
+        .trim()
+    ) {
+      resetLinks();
+      res.send("Reset completed");
+    } else {
+      res.send("Incorrect password!");
     }
   }
 );

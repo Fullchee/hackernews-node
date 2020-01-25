@@ -19,6 +19,8 @@
   - password protected (stored in Heroku config)
     - (git-crypt didn't work well with Heroku)
   - passwords encrypted with bcrypt
+- Easy script to update links from the production server
+  - `yarn updateLinks`
 
 ## Install
 

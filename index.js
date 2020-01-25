@@ -3,6 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const cors = require("cors");
 const crypto = require("crypto");
+const { check, validationResult } = require("express-validator");
 
 let links;
 resetLinks();
@@ -86,6 +87,7 @@ const server = new GraphQLServer({
 });
 
 server.express.use(cors());
+server.express.use(server.express.urlencoded());
 const OPTIONS = {
   port: process.env.PORT || 5000
 };
@@ -100,6 +102,19 @@ server.express.get("/reset", function(req, res) {
   resetLinks();
   res.send("Reset completed");
 });
+
+server.express.post(
+  "/reset",
+  [check("resetPassword").isLength({ min: 3 })],
+  (req, res) => {
+    const password = req.body.resetPassword;
+
+    // shoutout to Chrome!
+    if (password === "thisisunsafe") {
+      
+    }
+  }
+);
 
 server.start(OPTIONS, () =>
   console.log(`GraphQL Server is running on ${process.env.PORT || 5000}`)

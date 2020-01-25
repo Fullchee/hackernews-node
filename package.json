@@ -11,8 +11,7 @@
     "easygraphql-tester": "^5.1.6",
     "express": "^4.17.1",
     "express-validator": "^6.3.1",
-    "graphql-yoga": "^1.18.3",
-    "jest": "^24.9.0"
+    "graphql-yoga": "^1.18.3"
   },
   "scripts": {
     "start": "node scripts/start.js",
@@ -24,6 +23,7 @@
   },
   "devDependencies": {
     "concurrently": "^5.0.2",
+    "jest": "^25.1.0",
     "open": "^7.0.0"
   }
 }

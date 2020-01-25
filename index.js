@@ -110,10 +110,8 @@ server.express.post(
     const password = req.body.resetPassword;
 
     if (
-      password ===
-      fs
-        .readFileSync(path.resolve(__dirname, "src", "supersecretpass"), "utf8")
-        .trim()
+      password === process.env.SUPER_SECRET_RESET_PASSWORD ||
+      "thisisunsafe"
     ) {
       resetLinks();
       res.send("Reset completed");

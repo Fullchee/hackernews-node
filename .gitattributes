@@ -1,2 +1,0 @@
-secretfile filter=git-crypt diff=git-crypt
-super-secret-reset-pass filter=git-crypt diff=git-crypt

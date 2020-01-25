@@ -1,5 +1,6 @@
 const fs = require("fs");
 
+// added an id to every object
 const links = JSON.parse(fs.readFileSync("./links.json"));
 let i = 0;
 links.forEach(link => {

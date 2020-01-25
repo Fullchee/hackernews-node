@@ -6,6 +6,7 @@
   "author": "Fullchee Zhang <fullchee@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "bcrypt": "^3.0.7",
     "cors": "^2.8.5",
     "easygraphql-tester": "^5.1.6",
     "express": "^4.17.1",

@@ -5,6 +5,7 @@ const cors = require("cors");
 const crypto = require("crypto");
 const { check, validationResult } = require("express-validator");
 const express = require("express");
+const bcrypt = require("bcrypt");
 
 let links;
 resetLinks();
@@ -109,10 +110,12 @@ server.express.post(
   (req, res) => {
     const password = req.body.resetPassword;
 
-    if (
-      password === process.env.SUPER_SECRET_RESET_PASSWORD ||
-      "thisisunsafe"
-    ) {
+    // thisisunsafe, hashed with bcrypt
+    const localResetPass =
+      "$2b$10$MeF9iTg2/tOSyKJ8Y9Ht5uVH4DUV8Vc/wbhOpFjmTPrwxTBWwT3Oi";
+    const resetPassword =
+      process.env.SUPER_SECRET_RESET_PASSWORD || localResetPass;
+    if (bcrypt.compareSync(password, resetPassword)) {
       resetLinks();
       res.send("Reset completed");
     } else {

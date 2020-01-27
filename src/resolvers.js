@@ -73,3 +73,7 @@ module.exports.resolvers = {
     }
   }
 };
+
+module.exports.getLinks = () => {
+  return links;
+};

@@ -4,7 +4,7 @@ const cors = require("cors");
 const { check } = require("express-validator");
 const express = require("express");
 const bcrypt = require("bcrypt");
-const { resolvers, resetLinks } = require("./src/resolvers");
+const { resolvers, resetLinks, getLinks } = require("./src/resolvers");
 
 const server = new GraphQLServer({
   typeDefs: "./src/schema.graphql",
@@ -20,7 +20,7 @@ const OPTIONS = {
 server.express.set("json spaces", 2);
 
 server.express.get("/links", function(req, res) {
-  res.json(links);
+  res.json(getLinks());
 });
 
 server.express.get("/reset", function(req, res) {

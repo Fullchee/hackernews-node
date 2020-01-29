@@ -34,6 +34,8 @@ yarn install
 yarn start
 ```
 
+## Lessons learned
+
 ## TODOs
 
 - Pick a date according to the last viewed

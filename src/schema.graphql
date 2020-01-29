@@ -5,7 +5,7 @@ type Query {
 }
 
 type Mutation {
-  updateLink(
+  updateLinkFields(
     id: ID!
     title: String
     url: String
@@ -13,6 +13,7 @@ type Mutation {
     keywords: [String]
     datesAccessed: [String]
   ): Link
+  updateLink(stringifiedLink: String): Link
   deleteLink(id: ID!): Link
   addLink(title: String!, url: String, takeaways: String): Link!
   searchAll(query: String!): [Link!]!

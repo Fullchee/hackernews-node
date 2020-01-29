@@ -30,7 +30,19 @@ module.exports = class Links {
           this.links.push(link);
           return link;
         },
-        updateLink: (_, l) => {
+
+        updateLink: (_, params) => {
+          const updatedLink = JSON.parse(params.link);
+          const index = this.links.findIndex(link => link.id == updatedLink.id);
+          if (index === -1) {
+            this.links.push(updatedLink);
+          } else {
+            this.links[index] = updatedLink;
+          }
+          return updatedLink;
+        },
+
+        updateLinkFields: (_, l) => {
           const index = this.links.findIndex(link => link.id == l.id);
           console.log(index);
           if (index === -1) {

@@ -1,4 +1,5 @@
 const { GraphQLServer } = require("./node_modules/graphql-yoga");
+const fs = require("fs");
 const path = require("path");
 const cors = require("cors");
 const { check } = require("express-validator");
@@ -6,6 +7,11 @@ const express = require("express");
 const bcrypt = require("bcrypt");
 const Links = require("./src/Links");
 const links = new Links();
+
+const keywords = fs.readFileSync(
+  path.resolve(__dirname, "src/keywords.json"),
+  "utf-8"
+);
 
 const server = new GraphQLServer({
   typeDefs: "./src/schema.graphql",
@@ -22,6 +28,10 @@ server.express.set("json spaces", 2);
 
 server.express.get("/links", function(req, res) {
   res.json(links.links);
+});
+
+server.express.get("/keywords", function(req, res) {
+  res.json(keywords);
 });
 
 server.express.get("/reset", function(req, res) {

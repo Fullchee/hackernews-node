@@ -14,12 +14,13 @@
     "graphql-yoga": "^1.18.3"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon index.js",
     "linux-start": "concurrently \"node index.js\" \"xdg-open http://localhost:5000\"",
     "mac-start": "concurrently \"node index.js\" \"open http://localhost:5000\"",
     "test": "jest test",
     "deploy": "git push heroku master",
-    "updatelinks": "curl https://fullchee-values-backend.herokuapp.com/links > src/links.json"
+    "updatelinks": "curl https://fullchee-values-backend.herokuapp.com/links > src/links.json",
+    "updatekeywords": "node scripts/createKeywords.js"
   },
   "devDependencies": {
     "concurrently": "^5.0.2",

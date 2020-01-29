@@ -21,7 +21,7 @@ const OPTIONS = {
 server.express.set("json spaces", 2);
 
 server.express.get("/links", function(req, res) {
-  res.json(links.getLinks());
+  res.json(links.links);
 });
 
 server.express.get("/reset", function(req, res) {

@@ -36,4 +36,7 @@ yarn start
 
 ## TODOs
 
+- Pick a date according to the last viewed
+  - probability: time since last view = number of ballets
+  - pick a random ballet
 - Automated tests with Newman

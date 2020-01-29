@@ -33,3 +33,7 @@
 yarn install
 yarn start
 ```
+
+## TODOs
+
+- Automated tests with Newman

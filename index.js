@@ -4,11 +4,12 @@ const cors = require("cors");
 const { check } = require("express-validator");
 const express = require("express");
 const bcrypt = require("bcrypt");
-const { resolvers, resetLinks, getLinks } = require("./src/resolvers");
+const Links = require("./src/Links");
+const links = new Links();
 
 const server = new GraphQLServer({
   typeDefs: "./src/schema.graphql",
-  resolvers: resolvers
+  resolvers: links.resolvers
 });
 
 server.express.use(cors());
@@ -20,7 +21,7 @@ const OPTIONS = {
 server.express.set("json spaces", 2);
 
 server.express.get("/links", function(req, res) {
-  res.json(getLinks());
+  res.json(links.getLinks());
 });
 
 server.express.get("/reset", function(req, res) {
@@ -39,7 +40,7 @@ server.express.post(
     const resetPassword =
       process.env.SUPER_SECRET_RESET_PASSWORD || localResetPass;
     if (bcrypt.compareSync(password, resetPassword)) {
-      resetLinks();
+      links.reset();
       res.send("Reset completed");
     } else {
       res.send("Incorrect password!");
@@ -49,5 +50,4 @@ server.express.post(
 
 server.start(OPTIONS, () => {
   console.log(`GraphQL Server is running on ${process.env.PORT || 5000}`);
-  resetLinks();
 });

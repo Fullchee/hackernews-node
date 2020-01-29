@@ -14,7 +14,7 @@
     "graphql-yoga": "^1.18.3"
   },
   "scripts": {
-    "start": "node scripts/start.js",
+    "start": "node index.js",
     "linux-start": "concurrently \"node index.js\" \"xdg-open http://localhost:5000\"",
     "mac-start": "concurrently \"node index.js\" \"open http://localhost:5000\"",
     "test": "jest test",

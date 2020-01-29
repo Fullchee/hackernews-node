@@ -32,7 +32,7 @@ module.exports = class Links {
         },
 
         updateLink: (_, params) => {
-          const updatedLink = JSON.parse(params.link);
+          const updatedLink = JSON.parse(params.stringifiedLink);
           const index = this.links.findIndex(link => link.id == updatedLink.id);
           if (index === -1) {
             this.links.push(updatedLink);

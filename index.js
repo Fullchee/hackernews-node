@@ -30,6 +30,12 @@ server.express.get("/links", function(req, res) {
   res.json(links.links);
 });
 
+server.express.get("/link/:id", function(req, res) {
+  const id = req.params.id;
+  const link = links.links.find(l => l.id === id);
+  res.json(link);
+});
+
 server.express.get("/keywords", function(req, res) {
   res.json(keywords);
 });

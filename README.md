@@ -36,6 +36,18 @@ yarn start
 
 ## Lessons learned
 
+- Encrypting the reset password
+  - used bcrypt and a Heroku config variable
+  - I couldn't figure out how to use git-crypt with Heroku
+- keywords generation
+  - keywords.txt -> JSON
+  - txt: easy to add/remove words
+  - I initially put it in client
+  - logically made sense to put it in the back-end, make it available via /keywords
+- updateLink
+  - mutation params can only be simple (no Link param)
+    - I used a stringified object => way easier to create queries
+
 ## TODOs
 
 - Pick a date according to the last viewed

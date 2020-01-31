@@ -6,6 +6,7 @@ module.exports = class Links {
   constructor() {
     this.links = [];
     this.reset();
+    this.ballets = 0;
     this.resolvers = {
       Query: {
         randomLink: () => this.randomLink(),
@@ -86,8 +87,50 @@ module.exports = class Links {
       return !link.keywords.includes("Mental Illness");
     });
   };
+
+  getDaysSince = link => {
+    if (!link.datesAccessed) {
+      console.log(link);
+    }
+    if (!link.datesAccessed.length) {
+      return 0;
+    }
+    const lastDate = new Date(
+      link.datesAccessed[link.datesAccessed.length - 1]
+    );
+    return Math.floor((new Date() - lastDate) / (1000 * 60 * 60 * 24));
+  };
+  /**
+   *
+   */
   randomLink = () => {
-    return this.links[Math.floor(Math.random() * this.links.length)];
+    const link = this.links[Math.floor(Math.random() * this.links.length)];
+    const dates = link.datesAccessed;
+    if (!dates.length) {
+      return link;
+    }
+    const daysSince = this.getDaysSince(link);
+    if (daysSince > 300) {
+      return link;
+    }
+
+    this.resetBalletCount();
+
+    const threshold = Math.random() * this.ballets;
+    let days = 0;
+    for (let i = 0; i < this.links.length; i++) {
+      if (days >= threshold) {
+        return this.links[i];
+      }
+      days += this.getDaysSince(link);
+    }
+    return link;
+  };
+  resetBalletCount = () => {
+    this.ballets = 0;
+    this.links.forEach(link => {
+      this.ballets += this.getDaysSince(link);
+    });
   };
   generateId = () => {
     return crypto.randomBytes(16).toString("hex");

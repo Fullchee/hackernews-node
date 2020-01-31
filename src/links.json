@@ -137,15 +137,15 @@
   },
   {
     "keywords": [],
-    "title": "Vlogbrothers - Ai Wei Wei and Poetry Makes Nothing Happen",
-    "url": "Vlogbrothers - Ai Wei Wei and Poetry Makes Nothing Happen",
+    "title": "Vlogbrothers:Ai Wei Wei and Poetry Makes Nothing Happen",
+    "url": "https://www.youtube.com/watch?v=nDwTjPsG4b0",
     "takeaways": "Hammering steel straight from collapsed schools\n\nVoice recording listing students who died\n 3 hours 41 mins",
     "datesAccessed": [],
     "id": "18"
   },
   {
     "keywords": [],
-    "title": "Vlogbrothers Story of 2 Syrian Refugees -",
+    "title": "Vlogbrothers: Story of 2 Syrian Refugees",
     "url": "https://www.youtube.com/watch?v=8WSagdz-0Ac&index=4&list=PL9EF0C1C9A93295C5",
     "takeaways": "",
     "datesAccessed": [],
@@ -321,7 +321,7 @@
   },
   {
     "keywords": ["Mental Illness"],
-    "title": "Vlogbrothers - Your illness is not your fault",
+    "title": "Vlogbrothers: Your illness is not your fault",
     "url": "https://www.youtube.com/watch?v=3krVl6UMIeo",
     "takeaways": "",
     "datesAccessed": [],
@@ -345,7 +345,7 @@
   },
   {
     "keywords": [],
-    "title": "Vlogbrothers - On Punctuality",
+    "title": "Vlogbrothers: On Punctuality",
     "url": "https://www.youtube.com/watch?v=dqgYnF4aygA",
     "takeaways": "",
     "datesAccessed": [],
@@ -361,7 +361,7 @@
   },
   {
     "keywords": [],
-    "title": "Vlogbrothers - On Mattering",
+    "title": "Vlogbrothers: On Mattering",
     "url": "https://www.youtube.com/watch?v=p-5DX4XqtUI",
     "takeaways": "“Tonight, we feast on centuries of forgotten work",
     "datesAccessed": ["2019-08-31"],
@@ -440,7 +440,7 @@
     "id": "55"
   },
   {
-    "keywords": [],
+    "keywords": ["Honor"],
     "title": "Revisionist History: Basement Tapes",
     "url": "",
     "takeaways": "What is a son's duty to a father's legacy?",
@@ -461,6 +461,14 @@
     "url": "https://play.podtrac.com/npr-510308/edge1.pod.npr.org/anon.npr-podcasts/podcast/npr/hiddenbrain/2019/12/20191227_hiddenbrain_hb_pod_152_-_creatures_of_habit_-_dec_2019-aa58b2b4-85be-4b85-9218-75c6fc644625.mp3?awCollectionId=510308&awEpisodeId=787160734&orgId=1&topicId=1007&aggIds=423302056&d=3068&p=510308&story=787160734&t=podcast&e=787160734&size=48986949&ft=pod&f=510308",
     "takeaways": "Friction",
     "datesAccessed": ["2020-01-18"],
+    "id": "60"
+  },
+  {
+    "keywords": ["Habits"],
+    "title": "Vlogbrothers: Productivity & the 80% Rule",
+    "url": "https://www.youtube.com/watch?v=1LAhHDEtTD0",
+    "takeaways": "Productivity",
+    "datesAccessed": ["2020-01-31"],
     "id": "60"
   }
 ]

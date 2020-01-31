@@ -82,7 +82,9 @@ module.exports = class Links {
   reset = () => {
     this.links = JSON.parse(
       fs.readFileSync(path.resolve(__dirname, "links.json"))
-    );
+    ).filter(link => {
+      return !link.keywords.includes("Mental Illness");
+    });
   };
   randomLink = () => {
     return this.links[Math.floor(Math.random() * this.links.length)];

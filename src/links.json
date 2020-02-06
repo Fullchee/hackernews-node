@@ -304,28 +304,12 @@
     "id": "38"
   },
   {
-    "keywords": ["Mental Illness"],
-    "title": "Vlogbrothers: On mental illness",
-    "url": "https://www.youtube.com/watch?v=Z_y4CACK-9g",
-    "takeaways": "I don’t expect you to get well soon. Instead, my hope for you is for you to have a full and rich life",
-    "datesAccessed": [],
-    "id": "39"
-  },
-  {
     "keywords": [],
     "title": "What you make of it",
     "url": "https://www.youtube.com/watch?v=HL4Vz-644GA",
     "takeaways": "“How you feel at your worst is not how you’ll always feel",
     "datesAccessed": ["2019-09"],
     "id": "40"
-  },
-  {
-    "keywords": ["Mental Illness"],
-    "title": "Vlogbrothers: Your illness is not your fault",
-    "url": "https://www.youtube.com/watch?v=3krVl6UMIeo",
-    "takeaways": "",
-    "datesAccessed": [],
-    "id": "41"
   },
   {
     "keywords": [],
@@ -408,14 +392,6 @@
     "id": "51"
   },
   {
-    "keywords": ["Mental Illness"],
-    "title": "10% Happier: Fighting depression w/ social connection, Hour 1:30",
-    "url": "https://player.fm/series/10-happier-with-dan-harris/ep-183-fighting-depression-with-social-connection-johann-hari",
-    "takeaways": "",
-    "datesAccessed": [],
-    "id": "52"
-  },
-  {
     "keywords": [],
     "title": "Hurry Slowly The Science of Sleep",
     "url": "https://hurryslowly.co/010-sigrid-veasey/",
@@ -478,5 +454,13 @@
     "url": "https://www.youtube.com/watch?v=IeblJdB2-Vo",
     "keywords": [],
     "datesAccessed": []
+  },
+  {
+    "id": "asdflkjaskljs jdafjsldkfj",
+    "takeaways": "We're all suffering. This is what connects us",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=D38S9o_6qnc",
+    "keywords": ["Compassion", "Gratitude"],
+    "datesAccessed": ["2020-02-05"]
   }
 ]

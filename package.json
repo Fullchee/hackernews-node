@@ -5,8 +5,11 @@
   "repository": "https://github.com/Fullchee/values.git",
   "author": "Fullchee Zhang <fullchee@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "dependencies": {
-    "bcrypt": "^3.0.7",
+    "bcrypt": "^3.0.8",
     "cors": "^2.8.5",
     "easygraphql-tester": "^5.1.6",
     "express": "^4.17.1",

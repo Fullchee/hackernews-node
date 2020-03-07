@@ -304,28 +304,12 @@
     "id": "38"
   },
   {
-    "keywords": ["Mental Illness"],
-    "title": "Vlogbrothers: On mental illness",
-    "url": "https://www.youtube.com/watch?v=Z_y4CACK-9g",
-    "takeaways": "I don’t expect you to get well soon. Instead, my hope for you is for you to have a full and rich life",
-    "datesAccessed": [],
-    "id": "39"
-  },
-  {
     "keywords": [],
     "title": "What you make of it",
     "url": "https://www.youtube.com/watch?v=HL4Vz-644GA",
     "takeaways": "“How you feel at your worst is not how you’ll always feel",
     "datesAccessed": ["2019-09"],
     "id": "40"
-  },
-  {
-    "keywords": ["Mental Illness"],
-    "title": "Vlogbrothers: Your illness is not your fault",
-    "url": "https://www.youtube.com/watch?v=3krVl6UMIeo",
-    "takeaways": "",
-    "datesAccessed": [],
-    "id": "41"
   },
   {
     "keywords": [],
@@ -408,14 +392,6 @@
     "id": "51"
   },
   {
-    "keywords": ["Mental Illness"],
-    "title": "10% Happier: Fighting depression w/ social connection, Hour 1:30",
-    "url": "https://player.fm/series/10-happier-with-dan-harris/ep-183-fighting-depression-with-social-connection-johann-hari",
-    "takeaways": "",
-    "datesAccessed": [],
-    "id": "52"
-  },
-  {
     "keywords": [],
     "title": "Hurry Slowly The Science of Sleep",
     "url": "https://hurryslowly.co/010-sigrid-veasey/",
@@ -470,5 +446,29 @@
     "takeaways": "Productivity",
     "datesAccessed": ["2020-01-31"],
     "id": "60"
+  },
+  {
+    "id": "ef538020-3315-42d1-9ce2-7e78141a5b2c",
+    "takeaways": "If you can sit quietly after difficult news;\n\nif in financial downturns you remain perfectly calm;\n\nif you can see your neighbors travel to fantastic places without a twinge of jealousy;\n\nif you can happily eat whatever is put on your plate;\n\nif you can fall asleep after a day of running around without a drink or a pill;\n\nif you can always find contentment just where you are:\n\nyou are probably a dog.\n\n– Jack Kornfield",
+    "title": "The power of mindfulness",
+    "url": "https://www.youtube.com/watch?v=IeblJdB2-Vo",
+    "keywords": [],
+    "datesAccessed": []
+  },
+  {
+    "id": "asdflkjaskljs jdafjsldkfj",
+    "takeaways": "We're all suffering. This is what connects us",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=D38S9o_6qnc",
+    "keywords": ["Compassion", "Gratitude"],
+    "datesAccessed": ["2020-02-05"]
+  },
+  {
+    "id": "1972ee0b-9e15-4d7e-ac80-33270e07525a",
+    "takeaways": "What it could be",
+    "title": "Data Visualization",
+    "url": "https://m.youtube.com/watch?v=IHRh6XU7cQw",
+    "keywords": ["Inspiration", "Endurance", "Creativity", "Awe"],
+    "datesAccessed": ["2020-03-07"]
   }
 ]

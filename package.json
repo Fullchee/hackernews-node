@@ -5,8 +5,11 @@
   "repository": "https://github.com/Fullchee/values.git",
   "author": "Fullchee Zhang <fullchee@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "dependencies": {
-    "bcrypt": "^3.0.7",
+    "bcrypt": "^3.0.8",
     "cors": "^2.8.5",
     "easygraphql-tester": "^5.1.6",
     "express": "^4.17.1",
@@ -19,12 +22,13 @@
     "mac-start": "concurrently \"node index.js\" \"open http://localhost:5000\"",
     "test": "jest test",
     "deploy": "git push heroku master",
-    "updatelinks": "curl https://fullchee-values-backend.herokuapp.com/links > src/links.json",
-    "updatekeywords": "node scripts/createKeywords.js"
+    "updatelinks": "curl https://fullchee-values-backend.herokuapp.com/links > src/links.json && prettier --write src/links.json",
+    "updatekeywords": "node scripts/createKeywords.js && prettier --write src/keywords.json"
   },
   "devDependencies": {
     "concurrently": "^5.0.2",
     "jest": "^25.1.0",
-    "open": "^7.0.0"
+    "open": "^7.0.0",
+    "prettier": "^1.19.1"
   }
 }

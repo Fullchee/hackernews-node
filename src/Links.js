@@ -81,10 +81,19 @@ module.exports = class Links {
   }
 
   reset = () => {
+    let i = 0;
+    debugger;
     this.links = JSON.parse(
       fs.readFileSync(path.resolve(__dirname, "links.json"))
-    ).filter(link => {
-      return !link.keywords.includes("Mental Illness");
+    ).map(link => {
+      link.keywords = link.keywords.map(keyword => {
+        return {
+          id: i++,
+          label: keyword,
+          value: keyword
+        };
+      });
+      return link;
     });
   };
 
@@ -124,6 +133,8 @@ module.exports = class Links {
       }
       days += this.getDaysSince(link);
     }
+    debugger;
+    link.keywords = JSON.stringify(link.keywords);
     return link;
   };
   resetBalletCount = () => {

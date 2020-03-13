@@ -36,6 +36,7 @@ yarn start
 
 ## Lessons learned
 
+- send keywords as an object (JSON obj? or Stringified?)
 - Encrypting the reset password
   - used bcrypt and a Heroku config variable
   - I couldn't figure out how to use git-crypt with Heroku

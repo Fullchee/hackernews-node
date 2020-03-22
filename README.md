@@ -51,3 +51,9 @@ yarn start
 ## TODOs
 
 - Automated tests with Newman
+  - automate tests for adding all the user behaviours
+  - stub the backend?
+  - automated tests with the real backend
+- add Anna Akana and In a Nutshell to values
+- set the default "This is water" to prepopulate
+- handle bugs
